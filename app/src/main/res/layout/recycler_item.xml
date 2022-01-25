@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/ripple"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/square">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/round_img" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#2C3E50"
+        android:textSize="18sp"
+        tools:text="Allahabad HC Passes Orders on Petitions Related To" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto"
+        android:paddingStart="5dp"
+        android:textSize="13sp"
+        tools:text="jhdjsdhjsdhjsdh" />
+
+    <ImageView
+        android:id="@+id/eye"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_eye" />
+
+
+    <TextView
+        android:id="@+id/viewsEye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="#2C3E50"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <ImageView
+        android:id="@+id/cmt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:alpha="0.8"
+        android:src="@drawable/ic_mode_comment" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:textColor="#2C3E50"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="1" />
+</RelativeLayout>
